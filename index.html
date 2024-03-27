@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>פרויקט אמצע - תכנות</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/javascript.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <nav>
+            <button id="nav-button" class="btn-mobile" onclick="toggleNav()"><img src="images/nav-icon.svg"
+                    alt="ניווט"></button>
+            <ul id="main-nav" class="flex-container-nav hide-mobile">
+                <button id="close-nav-button" class="btn-mobile" onclick="toggleNav()"><img src="images/nav-close.svg"
+                        alt="סגירה"></button>
+                <li><a href="#"><img src="images/AMI LOGO.png" class="LOGO"></a></li>
+                <li><a href="#">אודות</a></li>
+                <li><a href="#">מסגרות</a></li>
+                <li><a href="#">צוות האגודה</a></li>
+                <li><a href="#">שאלות ותשובות</a></li>
+                <li><a href="#"> יצירת קשר</a></li>
+            </ul>
+        </nav>
+
+        <div class="cover-image-container">
+            <img class="cover-image" src="images/bg img.jpg">
+        </div>
+
+        <main>
+            <h1>
+                תסמונות נפוצות בקרב אנשים עם מגבלה שכלית התפתחותית
+            </h1>
+            <br>
+            <h2 class="explain">
+                לחצו על כל תסמונת כדי לראות תיאור קצר
+            </h2>
+            <br>
+
+            <input type="text" id="searchInput" placeholder="חיפוש לפי שם">
+
+            <ul class="flex-container-subjects" id="syndromesList">
+            </ul>
+
+            <ul class="flex-container-subjects">
+                <li><span>תסמונת דאון</span></li>
+                <li><span>תסמונת טרנר</span></li>
+                <li><span>תסמונת האיקס השביר</span></li>
+                <li><span>תסמונת קלינפלטר</span></li>
+                <li><span>תסמונת ויליאמס</span></li>
+                <li><span>תסמונת פראדר וילי</span></li>
+                <li><span>תסמונת אנגלמן</span></li>
+                <li><span>תסמונת מרפן</span></li>
+                <li><span>PLS</span></li>
+                <li><span>תסמונות אהלרס-דנלוס</span></li>
+            </ul>
+        </main>
+
+        <div class="popup-container" id="popup-container">
+            <img id="close-btn" src="images/close-popup.svg">
+
+            <div class="popup-content" id="popup-content">
+
+            </div><br>
+
+        </div>
+        <img class="buttom-img" src="images/DIS.jpg">
+    </div>
+</body>
+
+</html>
